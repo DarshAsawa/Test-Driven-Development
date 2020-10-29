@@ -36,8 +36,7 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz",currentCount);
     }
 
-    @Test(expected = NullPointerException.class)
-    public void checkInvalidNumber(){
+    @Test(expected = NullPointerException.class) public void checkInvalidNumber(){
         int number = 0;
         FizzBuzzCounter fz= new FizzBuzzCounter();
         String currentCount = fz.getResult(number);

@@ -17,4 +17,13 @@ public class FizzBuzzCounter {
         else
             throw new NullPointerException("Not a valid number");
     }
+    public static void main(String[] args){
+        FizzBuzzCounter fz = new FizzBuzzCounter();
+        int start = 1;
+        int end = 100;
+        for(int i=start;i<=end;i++){
+            String number = fz.getResult(i);
+            System.out.println(number);
+        }
+    }
 }
