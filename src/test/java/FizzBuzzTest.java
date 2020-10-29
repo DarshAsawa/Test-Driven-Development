@@ -34,6 +34,13 @@ public class FizzBuzzTest {
         FizzBuzzCounter fz= new FizzBuzzCounter();
         String currentCount = fz.getResult(number);
         Assert.assertEquals("FizzBuzz",currentCount);
+    }
 
+    @Test
+    public void checkInvalidNumber(){
+        int number = 0;
+        FizzBuzzCounter fz= new FizzBuzzCounter();
+        String currentCount = fz.getResult(number);
+        Assert.assertEquals("",currentCount);
     }
 }
