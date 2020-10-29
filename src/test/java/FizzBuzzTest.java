@@ -9,9 +9,10 @@ public class FizzBuzzTest {
         FizzBuzzCounter fz = new FizzBuzzCounter();
         String currentCount = fz.getResult(number);
 
-        Assert.assertEquals(1,currentCount);
+        Assert.assertEquals("1",currentCount);
     }
 
+    @Test
     public void checkFizz(){
         int number = 3;
         FizzBuzzCounter fz = new FizzBuzzCounter();
@@ -19,6 +20,7 @@ public class FizzBuzzTest {
         Assert.assertEquals("Fizz",currentCount1);
     }
 
+    @Test
     public void checkBuzz(){
         int number = 5;
         FizzBuzzCounter fz = new FizzBuzzCounter();
@@ -26,6 +28,7 @@ public class FizzBuzzTest {
         Assert.assertEquals("Buzz" ,currentCount);
     }
 
+    @Test
     public void checkFizzBuzz(){
         int number = 15;
         FizzBuzzCounter fz= new FizzBuzzCounter();
