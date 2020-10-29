@@ -11,7 +11,10 @@ public class FizzBuzzCounter {
                 result = "Buzz";
             } else
                 result = Integer.toString(number);
+
+            return result;
         }
-        return result;
+        else
+            throw new NullPointerException("Not a valid number");
     }
 }
