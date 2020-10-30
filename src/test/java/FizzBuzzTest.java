@@ -36,10 +36,26 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz",currentCount);
     }
 
-    @Test(expected = NullPointerException.class) public void checkInvalidNumber(){
+    @Test(expected = NullPointerException.class)
+    public void checkInvalidNumber(){
         int number = 0;
         FizzBuzzCounter fz= new FizzBuzzCounter();
         String currentCount = fz.getResult(number);
         Assert.assertEquals("",currentCount);
+    }
+
+    @Test
+    public void checkContainsDigit3(){
+        int number = 13;
+        FizzBuzzCounter fz = new FizzBuzzCounter();
+        String currentCount = fz.getResult(number);
+        Assert.assertEquals("Fizz",currentCount);
+    }
+    @Test
+    public void checkContainsDigit5(){
+        int number = 51;
+        FizzBuzzCounter fz = new FizzBuzzCounter();
+        String currentCount = fz.getResult(number);
+        Assert.assertEquals("Buzz",currentCount);
     }
 }

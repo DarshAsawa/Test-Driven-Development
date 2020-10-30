@@ -5,8 +5,9 @@ public class FizzBuzzCounter {
             if (number % 3 == 0) {
                 if (number % 5 == 0) {
                     result = "FizzBuzz";
-                } else
+                } else{
                     result = "Fizz";
+                }
             } else if (number % 5 == 0) {
                 result = "Buzz";
             } else
