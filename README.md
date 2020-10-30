@@ -13,5 +13,6 @@ Test-driven development (TDD) is a development technique where you must first wr
 ### Implementation:
 **Requirements:** 
 1. Java 8
-2. IntelliJ IDE 2020.2
+2. Junit 4.12
 3. Apache Maven 3.6.3
+4. IntelliJ IDE 2020.2
