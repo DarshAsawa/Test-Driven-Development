@@ -53,7 +53,7 @@ public class FizzBuzzTest {
     }
     @Test
     public void checkContainsDigit5(){
-        int number = 51;
+        int number = 56;
         FizzBuzzCounter fz = new FizzBuzzCounter();
         String currentCount = fz.getResult(number);
         Assert.assertEquals("Buzz",currentCount);

@@ -10,9 +10,17 @@ public class FizzBuzzCounter {
                 }
             } else if (number % 5 == 0) {
                 result = "Buzz";
-            } else
+            }
+            else {
                 result = Integer.toString(number);
-
+                if(result.contains("3")){
+                    result = "Fizz";
+                }
+                else
+                    if(result.contains("5")){
+                        result = "Buzz";
+                    }
+            }
             return result;
         }
         else
